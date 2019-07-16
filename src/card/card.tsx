@@ -1,6 +1,6 @@
 import React from 'react';
 import './card.css';
-import AI from './AI.jpg';
+import AI from '../AI.jpg';
 
 export const Card = () => {
 
