@@ -1,0 +1,55 @@
+.Card-wrapper {
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 5px;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+.Card-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.Column-one {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-grow:1;
+    flex-basis: auto;
+}
+.Column-two {
+    margin-left:0px;
+    margin-right: 15px;
+    flex-grow:6;
+    flex-basis: auto;
+}
+.progress {
+    background-color: rgb(175, 174, 174);
+    height: 17px;
+}
+.Inside-progress {
+    background-color: blue;
+    height: 17px;
+    width: 65%;
+}
+.Column-two >h3{
+    display: inline;
+}
+.Column-two >h2{
+    margin-top: 15px;
+}
+.Column-two >span{
+    color: blue;
+}
+.Column-two >p {
+    margin-bottom: 40px;
+}
+.Column-one > img{
+    vertical-align: middle;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
