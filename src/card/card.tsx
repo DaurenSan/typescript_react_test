@@ -1,32 +1,38 @@
 import React from 'react';
 import './card.css';
-import AI from '../AI.jpg';
+import {Project} from '../App';
 
-export const Card = () => {
+type Props = {
+   project: Project;
+}
 
+export default class Card extends React.Component<Props>{
+
+    render(){
     return (
      <div className="Card-wrapper">
         <div className="Card-container">
             <div className="Column-one">
-                <img src={AI}/>
+                <img src={this.props.project.picture}/>
             </div>
             <div className="Column-two">
-                <h3>Февраль 2019</h3>
-                <h2>Привлечение венчурного финансирования</h2>
+                <h3>{this.props.project.date}</h3>
+                <h2>{this.props.project.title}</h2>
                 <p>
-                We suggest that you stick to using default imports and exports when a module only exports a single thing (for example, a component). That’s what you get when you use export default Button and import Button from './Button'.
+                {this.props.project.description1}
                 <br/>
                 <br/>
-                Named exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.
+                {this.props.project.description2}
                 </p>
-                <span>65% реализовано</span>
+                <span>{this.props.project.progress}% реализовано</span>
             </div>
         </div>
         <div className="progress">
-            <div className="Inside-progress"></div>
+            <div style={{backgroundColor: 'blue', height: '17px', width: this.props.project.progress.toString()+'%'}}></div>
         </div>
      </div>
     );
-  }
+    }
+}
   
   
