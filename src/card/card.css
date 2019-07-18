@@ -1,10 +1,9 @@
 .Card-wrapper {
     border: 1px solid rgb(175, 174, 174);
     border-radius: 5px;
-    max-width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
+    max-width: 35%;
+    margin-top: 50px;
+    position: relative;
 }
 .Card-container {
     display: flex;
@@ -33,22 +32,25 @@
     height: 17px;
     width: 65%;
 }
-.Column-two >h3{
+.Column-two >h5{
     display: inline;
 }
-.Column-two >h2{
-    margin-top: 15px;
+.Column-two >h4{
+    margin-top: 10px;
 }
 .Column-two >span{
     color: blue;
+    font-size: 12px;
+
 }
 .Column-two >p {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+    font-size: 12px;
 }
 .Column-one > img{
     vertical-align: middle;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     margin-left: 0px;
     margin-right: 0px;
