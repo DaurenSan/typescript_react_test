@@ -39,7 +39,15 @@ export default class ClassCounter extends React.Component<Props, State> {
   render(){
     return (
       <div>
-        <h2>Проекты и результаты</h2>
+        <div className="topRow">
+          <h2>Проекты и результаты</h2>
+          <select>
+            <option>Период времени</option>
+          </select>
+          <select>
+            <option>Исполнитель</option>
+          </select>
+        </div>        
         <Card project = {this.state.project} shift = {this.state.shift} />
         <div className="buttonContainer">
           <hr/>
