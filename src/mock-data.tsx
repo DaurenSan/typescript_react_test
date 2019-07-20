@@ -1,4 +1,4 @@
-import {Project} from './App';
+import {Project} from './year/year';
 import AI from './AI.jpg';
 
 

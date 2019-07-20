@@ -1,20 +1,16 @@
 import React from 'react';
 import './card.css';
-import {Project} from '../App';
+import {ProjectProps} from '../year/year';
 
-type Props = {
-   project: Project;
-   shift: number;
-}
 
-export default class Card extends React.Component<Props>{
+export default class Card extends React.Component<ProjectProps>{
 
     render(){
     return (
      <div className="Card-wrapper" style={{left: this.props.shift.toString()+'px'}}>
         <div className="Card-container">
             <div className="Column-one">
-                <img src={this.props.project.picture}/>
+                <img src={this.props.project.picture} alt="ai"/>
             </div>
             <div className="Column-two">
                 <h5>{this.props.project.date}</h5>

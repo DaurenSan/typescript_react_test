@@ -1,0 +1,68 @@
+  .buttonContainer > hr {
+    display: block;
+    margin-top: 7px;
+    height: 3px;
+    width: 100%;
+    border: none;
+    background-color: rgb(175, 174, 174);
+    z-index: -2;
+    position: absolute;
+  }
+  .buttonContainer {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    height: 20px;
+    margin-top: 32px;
+  }
+  .buttonContainer > button {
+    position: absolute;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: rgb(175, 174, 174);
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .buttonContainer > button:hover{
+    cursor: pointer;
+  }
+  .bottomRow {
+    position: relative;
+    padding: 0px;
+    height: 150px;
+    margin-top: 17px;
+    width: 100%;
+  }
+  .bottomRowContainer {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10%;
+    word-wrap: break-word;
+  
+  }
+  .february {
+    left: 170px;
+  }
+  .may {
+    left: 530px;
+  }
+  .june {
+    left: 700px;
+  }
+  .october {
+    left: 960px;
+  }
+  
+  .bottomRowContainer > p{
+    margin: 9px 0px;
+  }
+  .small {
+    font-size: 12px;
+  }
+  .big {
+    font-size: 16px;
+  }
