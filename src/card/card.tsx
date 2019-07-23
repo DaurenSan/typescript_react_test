@@ -1,9 +1,19 @@
 import React from 'react';
 import './card.css';
-import {ProjectProps} from '../year/year';
+import {Project} from '../year/year';
+import {State} from "../reducers";
+import { connect } from "react-redux";
 
+type CardProps={
+    project: Project;
+    shift:number;
+}
+const mapStateToProps = (state: State) => ({
+    project: state.card_reducer.project,
+    shift: state.card_reducer.shift
+  })
 
-export default class Card extends React.Component<ProjectProps>{
+ class Card extends React.Component<CardProps>{
 
     render(){
     return (
@@ -31,5 +41,7 @@ export default class Card extends React.Component<ProjectProps>{
     );
     }
 }
-  
+
+export default connect(mapStateToProps)(Card);
+
   

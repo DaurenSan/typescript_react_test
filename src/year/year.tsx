@@ -3,7 +3,8 @@ import './year.css';
 import Card from '../card/card';
 import {DATA} from '../mock-data';
 import { connect } from "react-redux";
-import { State} from "../reducers";
+import {State} from "../reducers";
+
 
 export interface Project {
   id:number;
@@ -16,19 +17,15 @@ export interface Project {
 }
 
 export type ProjectProps = {
-  project: Project;
-  shift: number;
   goToFebruary?:any;
   goToMay?:any;
   goToJune?:any;
   goToOctober?:any;
 }
-
-const mapStateToProps = (state:State) => ({
-    project: state.project,
-    shift: state.shift
-  })
-
+const mapStateToProps = (state: State) => ({
+  project: state.card_reducer.project,
+  shift: state.card_reducer.shift
+})
 
 const mapDispatchToProps = (dispatch:any) => {
     return {
@@ -36,7 +33,7 @@ const mapDispatchToProps = (dispatch:any) => {
       goToMay: () => dispatch({type: "SHIFT_TO_MAY"}),
       goToJune: () => dispatch({type: "SHIFT_TO_JUNE"}),
       goToOctober: () => dispatch({type: "SHIFT_TO_OCTOBER"})
-    }
+    };
   }
 
 export class YearProjects extends React.Component<ProjectProps> {
@@ -44,7 +41,7 @@ export class YearProjects extends React.Component<ProjectProps> {
   render(){
     return (
       <div>
-        <Card project = {this.props.project} shift = {this.props.shift} />
+        <Card />
         <div className="buttonContainer">
           <hr/>
           <button className="february" onClick={this.props.goToFebruary}></button>

@@ -19,7 +19,7 @@
     z-index: -1;
 }
 .ArrowsContainer {
-    margin-top:263px;
+    margin-top:250px;
     width: 100%;
     position: fixed;
 }
@@ -29,9 +29,19 @@
     left: 50px;
     right: auto; 
 }
+.ArrowLeft:hover {
+    cursor: pointer;
+}
 .ArrowRight {
     display: inline-block;
     position: absolute;
     right: 50px; 
     left:auto; 
+}
+.ArrowRight:hover {
+    cursor: pointer;
+}
+.ArrowSign {
+    font-size: 12px;
+    text-align: center;
 }
