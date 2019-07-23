@@ -9,9 +9,12 @@ import createRootReducer from './reducers';
 
 
 export const history = createBrowserHistory()
-const store = createStore(createRootReducer(history)/*, {router: history, card_reducer:{project:DATA[0], shift:170}}*/)
+const store = createStore(createRootReducer(history))
 
 console.log(store.getState())
+
+history.push('/', 2019)
+
 ReactDOM.render(
                     <Provider store={store}>
                         <App></App>
