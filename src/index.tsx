@@ -3,15 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Provider } from "react-redux";
-import { createBrowserHistory } from 'history';
-import { createStore } from 'redux';
-import createRootReducer from './reducers';
+import {history, store} from './configureStore'
 
-
-export const history = createBrowserHistory()
-const store = createStore(createRootReducer(history))
-
-console.log(store.getState())
 
 history.push('/', 2019)
 

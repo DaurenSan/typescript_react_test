@@ -4,7 +4,7 @@ import arrowLeft from "./arrow-left.png";
 import arrowRight from "./arrow-right.png";
 import {Route} from "react-router-dom";
 import { ConnectedRouter } from 'connected-react-router';
-import {history} from './index';
+import {history} from './configureStore';
 import { History } from 'history';
 import YearProjects from './year/year';
 import EmptyClass from "./Empty";
